@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: antiquewhite; */
+}
+
+h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 70px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: rgb(71, 163, 255);
+    text-shadow: 
+    -1px -1px 0 rgb(19, 26, 219),
+    -2px -2px 0 rgb(19, 26, 219),
+    -3px -3px 0 rgb(19, 26, 219),
+    -4px -4px 0 rgb(19, 26, 219),
+    -5px -5px 0 rgb(19, 26, 219),
+    -6px -6px 0 rgb(19, 26, 219),
+    -7px -7px 0 rgb(19, 26, 219),
+    -8px -8px 0 rgb(19, 26, 219),
+    -30px 20px 40px dimgrey
+}
+
+.btn {
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+    font-size: 35px;
+}
+
+.number{
+    border: 3px solid green;
+    border-radius: 10px;
+}
+.number:hover {
+    background-color: green;
+    color: white;
+}
+
+.operator{
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+.operator:hover {
+    background-color: blue;
+    color: white;
+}
+
+.decimal{
+    border: 3px solid gold;
+    border-radius: 10px;
+}
+.decimal:hover {
+    background-color: gold;
+}
+
+.equal{
+    border: 3px solid rgb(23, 131, 219);
+    border-radius: 10px;
+}
+.equal:hover {
+    background-color: rgb(23, 131, 219);;
+    color: white;
+}
+
+#clear-btn{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+#clear-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.first-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#screen{
+    width: 310px;
+    border: 1px solid salmon;
+    height: 80px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.previous {
+    font-size: 20px;
+}
+.current {
+    font-size: 30px
+}
