@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     equal.addEventListener('click', () => {
+        //if cV and pV are NOT empty then run calculate. If empty; dont run calculate.
         if (currentValue != '' && previousValue != '') {
             calculate();
             previousScreen.textContent = '';
@@ -92,9 +93,9 @@ const roundNumber = (num) => {
 };
 
 const addDecimal = () => {
-    //if the value doesnt have a decimal already, then you can add a decimal
+    //if cV doesnt have a decimal, then add a decimal if clicked.
     if(!currentValue.includes(".")) {
         currentValue += '.';
     }
-    //else dont add decimal, (computer assumes this)
+    //if cV does have decimal; dont add on decimal, (computer assumes this)
 }
